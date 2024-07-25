@@ -1,27 +1,27 @@
 import React, { Component } from 'react'
+import { Button, Card, Typography } from 'antd';
+
+const { Title } = Typography;
 
 class LotteryTicket extends Component {
 
   render() {
     const { actions, index, color, number } = this.props;
     return (
-      <div
-        style={{
-          backgroundColor: color,
-          padding: 5,
-          width: '60%',
-          margin: 'auto'
-        }}
-      >
-        <button
-          style={{ float: 'left' }}
+      <Card
+        style={{ backgroundColor: color, marginBottom: 25 }}
+        size='small'
+        title = 'Ticket'
+        >
+        
+        <b><Title Level = {3}> {number}</Title></b>
+        <Button
+          block
           onClick={ () => { actions.removeTicket( index ) } }
         >
           X
-        </button>
-        <small>This ticket has number: <b>{number}</b></small>
-
-      </div>
+        </Button>
+      </Card>
     );
   }
 }
