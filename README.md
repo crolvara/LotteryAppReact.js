@@ -1,16 +1,23 @@
-!In Progress!
+A simple React-based web application for registering and managing lottery tickets.
+Features
 
-# Getting Started with Create React App
+    Register and remove lottery tickets
+    Finish the lottery to reveal the winning number
+    Reset the lottery to start again
+    Navigate between the main lottery page and an about page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies Used
 
-## Available Scripts
+    React
+    Ant Design
+    React Router
 
-In the project directory, you can run:
+Installation
+Clone the repository and install dependencies:
+cd lottery-app
+npm install
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+Usage
+Start the application:
+npm start
 
