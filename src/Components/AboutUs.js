@@ -4,7 +4,7 @@ class AboutUs extends Component {
     render() {
         return (
             <p>
-                The purpose of this lottery is to learn how to work with React!
+                The purpose of this lottery is to show how i work with React!
                 We do not support or encourage gambling!
             </p>
         )

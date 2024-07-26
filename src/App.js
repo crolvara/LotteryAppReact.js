@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import AppHeader from './Components/AppHeader';
 import Lottery from './Components/Lottery';
@@ -72,6 +72,7 @@ class App extends Component {
               <Routes>
                 <Route path='/' element={this.renderApp()} />
                 <Route path='/about' element={<AboutUs />} />
+                <Route path='*' element={<Navigate to='/about' />} />
               </Routes>
             </div>
           </Content>

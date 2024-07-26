@@ -7,7 +7,7 @@ class AppFooter extends Component {
     render() {
         return (
             <Footer style={{ textAlign: 'center'}}>
-                FOOTER
+                Completed by Tsvetoslav Konishev based on the React tutorial of World of Ivo, special thanks to him!
             </Footer>
         )
     }
